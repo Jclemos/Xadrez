@@ -45,7 +45,7 @@ namespace Xadrez
         public static void imprimirConjunto(HashSet<Peca> conjunto)
         {
             Console.Write("[");
-            foreach(Peca x in conjunto)
+            foreach (Peca x in conjunto)
             {
                 Console.Write(x);
             }
@@ -59,7 +59,7 @@ namespace Xadrez
                 Console.Write(8 - i + " ");
                 for (int j = 0; j < tab.colunas; j++)
                 {
-                    imprimirPeca(tab.peca(i,j));
+                    imprimirPeca(tab.peca(i, j));
                 }
                 Console.WriteLine();
             }
@@ -71,7 +71,7 @@ namespace Xadrez
 
             ConsoleColor fundoOriginal = Console.BackgroundColor;
             ConsoleColor fundoAlternado = ConsoleColor.DarkGray;
-            
+
             for (int i = 0; i < tab.linhas; i++)
             {
                 Console.Write(8 - i + " ");
